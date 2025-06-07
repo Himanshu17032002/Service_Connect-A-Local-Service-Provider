@@ -1,0 +1,120 @@
+<?php
+session_start();
+if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'provider') {
+    header("Location: login.html");
+    exit();
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Provider Dashboard</title>
+  <link rel="stylesheet" href="providerstyle.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Service Provider Dashboard</h1>
+        <div class="user-info">
+            Logged in as: <strong>Manoj</strong>
+            <a href="home .html">Logout</a>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h3>Menu</h3>
+        <a href="#">Add New Service</a>
+        <a href="#">Manage Bookings</a>
+        <a href="#">Payment History</a>
+        <a href="#">Account Settings</a>
+        <a href="#">Help</a>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <h2>Add New Service</h2>
+        <div class="form-section">
+            <input type="text" placeholder="Service Name" required>
+            <textarea placeholder="Service Details" rows="4" required></textarea>
+            <input type="number" placeholder="Service Price" required>
+            <button>Add Service</button>
+        </div>
+
+        <h2>Manage Bookings</h2>
+        <div class="table-section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Booking ID</th>
+                        <th>Service</th>
+                        <th>Customer</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Cleaning</td>
+                        <td>Kishore</td>
+                        <td>Pending</td>
+                        <td>
+                            <button>Approve</button>
+                            <button>Reject</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Cooking</td>
+                        <td>Avantika</td>
+                        <td>Pending</td>
+                        <td>
+                            <button>Approve</button>
+                            <button>Reject</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Payment History</h2>
+        <div class="table-section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Payment ID</th>
+                        <th>Service</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>Cleaning</td>
+                        <td>rs 500</td>
+                        <td>2024-11-25</td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>Cooking</td>
+                        <td>rs 1000</td>
+                        <td>2024-11-26</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Service Connect. All rights reserved.
+    </footer>
+    <script src="Provider.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,386 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: linear-gradient(135deg,#7dd653, #64a8f0 );
+}
+
+header {
+    
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    width: 1219px;
+    justify-content: space-between;
+    align-items: center;
+    border:2px solid white;
+  
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+header nav ul li a.btn {
+    background: #fff;
+    color: #007BFF;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+header nav ul li a.btn:hover {
+    background: #0056b3;
+    color: #fff;
+}
+
+.hero {
+    background: linear-gradient(135deg, #007BFF, #56ab2f);
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    border: 2px solid white;
+    
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero .cta {
+    background: #ffd700;
+    color: #007BFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.hero .cta:hover {
+    background: #fff;
+    color: #007BFF;
+}
+
+.about, .services, .contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+
+.about h2, .contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color:white
+}
+
+.about{
+    background: linear-gradient(135deg,#56ab2f, #007BFF );
+    border: 2px solid white;
+    color: white;
+    height: 500px;
+}
+.about div li {
+    list-style: none;
+    justify-content: center;
+
+}
+.carousel-container {
+    position: relative;
+    width: 100%;
+   
+    height: 500px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    background: none;
+  }
+  
+  .carousel-item h2 {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .carousel-item p {
+    font-size: 1em;
+    color: #fff6f6;
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+    left: 16px;
+    opacity: 0.5;
+  }
+  
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+.services{
+    background: linear-gradient(135deg,#007BFF,#56ab2f );
+    border: 2px solid white;
+   
+}
+.contact{
+    background: linear-gradient(135deg,#56ab2f, #007BFF );
+    border: 2px solid white;
+    
+}
+
+.services .service-list {
+    display: flex;
+    color: rgb(0, 0, 0);
+    gap: 20px;
+    justify-content: center;
+   
+}
+
+
+.services .service-item {
+    background: #f3f4f6;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1 1 calc(25% - 20px);
+    min-width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   
+      color: black;
+   
+}
+.services .service-item h2{
+    border-radius: 5px;
+    box-shadow: #000;
+    
+    
+    
+}
+
+.services .service-item p{
+    border-radius: 5px;
+   color: black;
+   
+  
+}
+.services #img1{
+    background-image: url('elctrician.jpeg');
+    background-size: cover;
+    background-position: center;
+   
+
+    
+}
+.services #img1:hover{
+     background-image: none;
+
+}
+.services #img2{
+    background-image: url('download.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.services #img2:hover{
+    background-image: none;
+
+}
+.services #img3{
+    background-image: url('plumber.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.services #img3:hover{
+    background-image: none;
+
+}
+.services #img4{
+    background-image: url('securitygauard.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.services #img4:hover{
+    background-image: none;
+    visibility: visible;
+
+}
+
+.services .service-item h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #007BFF;
+   
+}
+
+.contact form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact form button {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.contact form button:hover {
+    background: #0056b3;
+}
+.faq-container {
+    color: white;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(135deg,#56ab2f, #007BFF );
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.faq {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+.faq:last-child {
+    border-bottom: none;
+}
+.faq-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.faq-header h3 {
+    margin: 0;
+    font-size: 18px;
+}
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+.faq-content.open {
+    max-height: 200px;
+}
+.faq-content p {
+    margin: 10px 0 0;
+}
+.icon {
+    font-size: 50px;
+    color: #ffffff;
+    user-select: none;
+}
+.icon:hover {
+    color: #000;
+}
+
+footer {
+    height:400px;
+    
+    background: #000000;
+    color: #ffffff;
+    display: flex;
+    padding: 10px 0;
+   
+}
+
+.Serviceinfo{
+   position:relative;
+    width:356px;
+    left: 20px;
+    top: 19px;
+}
+.copy{
+    position: relative;
+    align-self: flex-end;
+    
+    border-top:2px  solid white ;
+}
+.company{
+    justify-content: center;
+    position: relative;
+    left: 460px;
+    top: 39px;
+    
+}
+.company li {
+
+    list-style: none;
+    text-decoration: none;
+}
+.company li a{
+    text-decoration: none;
+    color: white;
+}
+.company li a:hover{
+    color:rgb(0, 140, 255)
+}

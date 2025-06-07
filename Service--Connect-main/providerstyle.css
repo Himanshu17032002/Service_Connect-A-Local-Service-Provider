@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+/* Header */
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    margin-left: 189px;
+}
+header .user-info {
+    font-size: 14px;
+}
+header .user-info a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+header .user-info a:hover {
+    text-decoration: underline;
+}
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background-color: #343a40;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    box-sizing: border-box;
+  
+}
+.sidebar h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 16px;
+}
+.sidebar a:hover {
+    background-color: #495057;
+    border-radius: 4px;
+    padding-left: 5px;
+}
+/* Main Content */
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+}
+.main-content h2 {
+    margin-top: 0;
+}
+.form-section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.form-section input, .form-section textarea, .form-section button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.form-section button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.form-section button:hover {
+    background-color: #0056b3;
+}
+.table-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+table th {
+    background-color: #f4f4f9;
+}
+table button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+table button:hover {
+    background-color: #0056b3;
+}
+/* Footer */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #888;
+    font-size: 12px;
+}

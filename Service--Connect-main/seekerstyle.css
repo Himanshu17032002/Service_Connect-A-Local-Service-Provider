@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #007bff;
+    color: black;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    margin-left: 189px;
+}
+header .user-info {
+    font-size: 14px;
+}
+header .user-info a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+header .user-info a:hover {
+    text-decoration: underline;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #007bff;
+    padding: 15px 0;
+    color: white;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+.navbar a:hover {
+    background-color: #0056b3;
+    border-radius: 5px;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.loading {
+    text-align: center;
+    font-size: 20px;
+    color: #555;
+}
+
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+}
+.main-content h2 {
+    margin-top: 0;
+}
+.service-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.service-card h3 {
+    margin: 0;
+}
+.service-card p {
+    margin: 5px 0;
+    color: #555;
+}
+.service-card button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.service-card button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #888;
+    font-size: 12px;
+}

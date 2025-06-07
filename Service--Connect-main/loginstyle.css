@@ -1,0 +1,129 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #007BFF, #56ab2f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border-radius: 2px solid green;
+}
+
+.container {
+    background: #304aa1;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.616);
+    max-width: 400px;
+    width: 100%;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 14px;
+}
+
+input, select {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    background: #ffffff;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.902);
+}
+
+input:focus, select:focus {
+    outline: none;
+    border: 2px solid #c2d8f4;
+}
+
+button {
+    background-color: #0b131a;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #bcd3ec;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* Toggle link styles */
+.toggle {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.toggle a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.toggle a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.hidden {
+    display: none;
+}
